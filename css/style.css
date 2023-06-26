@@ -9,3 +9,10 @@
     border: 1px solid black;
 }
 
+.square {
+    background-color: white;
+}
+
+.square:hover {
+    background-color: black;
+}
