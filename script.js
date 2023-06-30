@@ -7,4 +7,12 @@ window.addEventListener('DOMContentLoaded', () => {
         square.classList.add('square')
         container.appendChild(square);
     }
-})
+
+    // drawing 
+    const squares = document.querySelectorAll('.square');
+    squares.forEach((square) => {
+        square.addEventListener('mouseover', () => {
+            square.style.backgroundColor = 'black'; 
+        });
+    });
+});
