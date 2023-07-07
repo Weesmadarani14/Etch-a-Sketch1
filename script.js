@@ -16,10 +16,12 @@ window.addEventListener('DOMContentLoaded', () => {
             square.style.backgroundColor = 'black'; 
         });
     });
-});
+
 
     clearButton.addEventListener ('click', () => {
         squares.forEach((square) => {
             square.style.backgroundColor = 'white';
-        })
-    })
+        });
+    });
+
+});
