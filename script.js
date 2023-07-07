@@ -1,5 +1,6 @@
 window.addEventListener('DOMContentLoaded', () => {
     const container = document.getElementById('container');
+    const clearButton = document.getElementById('clear');
 
     // 16x16 grid
     for (let i = 0; i < 16 * 16; i++) {
@@ -16,3 +17,9 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+    clearButton.addEventListener ('click', () => {
+        squares.forEach((square) => {
+            square.style.backgroundColor = 'white';
+        })
+    })
